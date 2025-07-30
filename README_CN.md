@@ -1,4 +1,4 @@
-# XVERSE 3D-GS UE 插件
+# XScene-UEPlugin 插件
 
 <a href="./LICENSE">
         <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"></a>
@@ -25,7 +25,7 @@
 
 ## 简介
 
-XVERSE 3D Gaussian Splatting （3D-GS）UE Plugin 是基于 Unreal Engine 5 (UE5) 的混合编辑插件，由 XVERSE Technology Inc. (Zhenshen, China) 开发，旨在UE中提供 Guassian Splatting 模型的生成、呈现、混合编辑能力。Guassian Splatting 是一项最近兴起的 3D 重建技术，用于从多张照片重建 3D 场景, 更多原理可以参考[这里](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+XScene-UEPlugin是基于 Unreal Engine 5 (UE5) 的混合编辑插件，由 XVERSE Technology Inc. (Zhenshen, China) 开发，旨在UE中提供 Guassian Splatting 模型的生成、呈现、混合编辑能力。Guassian Splatting 是一项最近兴起的 3D 重建技术，用于从多张照片重建 3D 场景, 更多原理可以参考[这里](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
 
 
 ## 招聘
@@ -46,7 +46,7 @@ XVERSE 3D Gaussian Splatting （3D-GS）UE Plugin 是基于 Unreal Engine 5 (UE5
 ## 项目结构
 
 ```text
-📦 XVERSE-3D-GS-UEPlugin
+📦 XScene-UEPlugin
 📂 Training
 ├️ gaussian-splatting/        # 核心算法和训练脚本
 ├️ README.md                  # 英文训练指南
@@ -107,8 +107,8 @@ XVERSE 3D Gaussian Splatting （3D-GS）UE Plugin 是基于 Unreal Engine 5 (UE5
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/xverse-tech/XVERSE-3D-GS-UEPlugin.git
-cd XVERSE-3D-GS-UEPlugin
+git clone https://github.com/xverse-engine/XScene-UEPlugin.git
+cd XScene-UEPlugin
 ```
 
 ### 2. 安装依赖
@@ -155,12 +155,12 @@ pip install -r Training/gaussian-splatting/requirements.txt
 ---
 
 ## 版本记录
-[v1.1.6](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.6)
+[v1.1.6](https://github.com/xverse-engine//XScene-UEPlugin/tree/v1.1.6)
 - 提供了一个便捷易用的训练代码和脚本，支持用户进行参数调整
 - 目录结构调整，将目录分为3DGS训练和UE插件两部分
 
 
-[v1.1.5](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.5)
+[v1.1.5](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.5)
 - 支持用户自定义训练参数设置
 - 修改3DGS致密化策略，更加关注重要领域
 - 支持对象重建的后处理策略，可以有效地去除浮点数
@@ -168,32 +168,32 @@ pip install -r Training/gaussian-splatting/requirements.txt
 <img src="UEPlugin/Media/image/compare/1.5-1.png" width="500" />
 <img src="UEPlugin/Media/image/compare/1.5-2.png" width="500" />
 
-[v1.1.4](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.4)
+[v1.1.4](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.4)
 - 支持 UE5.4
  
-[v1.1.3](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.3)
+[v1.1.3](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.3)
 - 支持拖动多个文件Content Browser并导入
 - 修复 buffer资产位置不正确时候的闪退问题
 - 修复 XV3DTools 错误路径提示
 
-[v1.1.2](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.2)
+[v1.1.2](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.2)
 - 支持更多类别ply头文件
 - 修复移动物体闪烁的bug
 - 更新UI
 
-[v1.1.1](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.1)
+[v1.1.1](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.1)
 - 更新剪裁功能，实现剪裁出一个干净的niagara来做特效
 - XV3DTools v1.1.1：支持用户调节训练迭代次数
 
-[v1.1.0](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.0)
+[v1.1.0](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.0)
 - 导入时自动生成LOD，克服单个Niagara 200万点云数量限制
 - Windows本地训练环境：使用XV3DTools，实现在windows平台下，给定mp4视频一键训练出Gaussian Splatting ply
 - 修复transform的bug
 
-[v1.0.1](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.0.0)
+[v1.0.1](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.0.0)
 - 修复v1.0.0的bug：UE5.2和UE5.3下打包出现问题
 
-[v1.0.0](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.0.0)
+[v1.0.0](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.0.0)
 - 基于 Niagara 的高质量且实时的 3D Gaussian Splatting 模型渲染
 - 轻松将原始 Gaussian Splatting 场景（.ply 文件）导入并在UE场景中渲染
 - 与其他 UE 资产混合渲染

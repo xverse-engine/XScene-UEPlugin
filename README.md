@@ -1,4 +1,4 @@
-# XVERSE 3D-GS UE Plugin
+# XScene-UEPlugin
 
 <a href="./LICENSE">
         <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"></a>
@@ -25,13 +25,13 @@ English | [中文](./README_CN.md)
 
 ## Introduction
 
-XVERSE 3D Gaussian Splatting UE Plugin (XVERSE 3D-GS UE Plugin) is an Unreal Engine 5 (UE5) plugin developed by XVERSE Technology Inc. (Shenzhen, China). It provides real-time visualization, management, editing, and scalable hybrid rendering of Gaussian Splatting models—a novel technique for reconstructing 3D scenes from multi-view photos. For more details, see [3D Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+XScene-UEPlugin is an Unreal Engine 5 (UE5) plugin developed by XVERSE Technology Inc. (Shenzhen, China). It provides real-time visualization, management, editing, and scalable hybrid rendering of Gaussian Splatting models—a novel technique for reconstructing 3D scenes from multi-view photos. For more details, see [3D Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
 
 ---
 
 ## Project Structure
 ```text
-📦 XVERSE-3D-GS-UEPlugin
+📦 XScene-UEPlugin
 ├─ 📁 Training
 │  ├─ gaussian-splatting/        # Core algorithm and training scripts
 │  ├─ README.md                  # English training guide
@@ -93,8 +93,8 @@ The `UEPlugin` folder contains all UE5 plugin assets, source code, and documenta
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/xverse-tech/XVERSE-3D-GS-UEPlugin.git
-cd XVERSE-3D-GS-UEPlugin
+git clone https://github.com/xverse-engine/XScene-UEPlugin.git
+cd XScene-UEPlugin
 ```
 
 ### 2. Install Dependencies
@@ -141,11 +141,11 @@ Contributions and feature requests are welcome!
 ---
 
 ## Release Note
-[v1.1.6](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.6)
+[v1.1.6](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.6)
 - Provides a convenient and simple training code and script
 - The directory structure has been adjusted to separate training and UE plugins
 
-[v1.1.5](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.5)
+[v1.1.5](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.5)
 - Support user-defined settings of training parameters
 - Modify 3DGS densification strategy to focus more on important areas
 - Support post-processing strategies for object reconstruction, which can effectively remove floaters
@@ -155,33 +155,33 @@ Contributions and feature requests are welcome!
 
 
 
-[v1.1.4](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.4)
+[v1.1.4](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.4)
 - Support UE5.4
 
-[v1.1.3](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.3)
+[v1.1.3](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.3)
 - Support dragging multiple ply files into the content directory
 - Fix the crash issue when the buffer asset position is incorrect
 - Fix bug in XV3DTools while using wrong path 
   
 
-[v1.1.2](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.2)
+[v1.1.2](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.2)
 - Supports more types of ply header 
 - Fixed flickers when moving objects
 - Update UI
 
-[v1.1.1](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.1)
+[v1.1.1](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.1)
 - New Model Clipping allowing the creation of a clean Niagara for VFX.
 - XV3DTools v1.1.1: Users can now adjust the training iteration.
 
-[v1.1.0](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.1.0)
+[v1.1.0](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.1.0)
 - Training tools in Windows system (XV3DTools v1.0) to train a given mp4 video to GaussianSplatting ply file
 - Automatic lod generation, supporting over 200,000 point clouds in niagara
 - fix bug in transform
 
-[v1.0.1](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.0.0)
+[v1.0.1](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.0.0)
 - Fix bug in v1.0.0：Error while packaging for Windows in UE5.2 and UE5.3
   
-[v1.0.0](https://github.com/xverse-engine/XV3DGS-UEPlugin/tree/v1.0.0)
+[v1.0.0](https://github.com/xverse-engine/XScene-UEPlugin/tree/v1.0.0)
 - Niagara-Based High-quality real-time visualizing and rendering for 3D Gaussian Splatting
 - Easily importing and converting from the original Gaussian Splatting scene (.ply file) to ours
 - Hybrid rendering with other UE assets 

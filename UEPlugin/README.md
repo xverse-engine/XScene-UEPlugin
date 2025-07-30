@@ -1,4 +1,4 @@
-# XVERSE 3D-GS UE Plugin
+# XScene-UEPlugin
 
 <a href="./LICENSE">
         <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"></a>
@@ -12,7 +12,7 @@ English | [中文](./README_CN.md)
 
 # Introduction
 
-XVERSE 3D Gaussian Splatting UE plugin（XVERSE 3D-GS UE Plugin）is an Unreal Engine 5 (UE5) based plugin developed by XVERSE Technology Inc. (Shenzhen, China), aiming to provide real-time visualization, management, editing, and scalable hybrid rendering of Gaussian Splatting model, which is a recently arised technique for reconstructing 3D scenes from multiple photos, more details can refer to [here](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
+XScene-UEPlugin is an Unreal Engine 5 (UE5) based plugin developed by XVERSE Technology Inc. (Shenzhen, China), aiming to provide real-time visualization, management, editing, and scalable hybrid rendering of Gaussian Splatting model, which is a recently arised technique for reconstructing 3D scenes from multiple photos, more details can refer to [here](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/).
 
 Currently, our plugin is implemented based on UE5 Niagara, fully exploiting the advantage of the features provided by UE5 to realize efficient rendering and managing for Guassian Splatting models.
 
